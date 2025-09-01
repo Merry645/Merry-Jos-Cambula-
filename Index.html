@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Pessoal</title>
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="Css.css">
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+
+  <header>
+    <h1>Merry José Cambula</h1>
+    <h2>Bem-vindo ao meu Site</h2>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#Conquista">Conquista</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+<img src="./merry.jpg" class="yu"></img>
+<div class="logo-svg">
+  <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="45" fill="url(#grad)" />
+    <text x="50%" y="55%" text-anchor="middle" font-size="32" font-family="Poppins, sans-serif" fill="#fff" font-weight="700">MJC</text>
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+  <main class="container">
+    <section class="card" id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou Merry,de  Moçambique. Sou apaixonada por <strong>tecnologia</strong>, design e inovação. Este site foi criado para partilhar um pouco sobre mim e os meus projectos.Actualmente sou estudante,frequento a 12ª classe na escola secundária "1⁰ de Maio" de Chicuque,na área de ciências com desenho. sou programadora e domino <strong>HTML,CSS,JavaScript e Phyton</strong> e faço parte da comunidade<strong> Zindi</strong>( um grupo que usa dados e IA para resolver desafios reais de África). Para além do<strong> português</strong> , também falo <strong>inglês</strong>,um pouco de <strong>coreano</strong> e algumas <strong>linguas locais moçambicanas</strong>. Sou <strong>escritora </strong> e sou apaixonada pela literatura moçambicana e inglesa. Além disso,sou grande apreciadora da cultura asiática em especial a <strong>cultura coreana</strong> e sou grande fã do <strong>BTS</strong>. No meu tempo livre gosto de <strong>ler </strong> e fazer <strong>crochê.</strong></p>
+    </section>
+<section class="card" id="Conquista">
+  <h2>Conquistas & Experiência</h2>
+  <ul>
+    <div class="menu-item"> <li> Prêmios</li>
+      <span class="seta">▼</span>
+      </div>
+
+<div class="conteudo">
+  
+    <li>🏆 Prêmio de Melhor aluna do 2⁰ ciclo  da Escola secundária "1⁰ de Maio" de Chicuque  (2024)</li>
+  
+          
+    <li>🏆  Prêmio de Melhor aluna  do 1⁰ ciclo da Escola secundária "1⁰ de Maio"  de Chicuque (2023) </li>
+  <h2>Diplomas</h2>
+  
+
+    <div class="galeria">
+      <img src="./p2024.jpg" alt="foto 0" class="miniatura">
+  <img src="./p2023.jpg" alt="Foto 1" class="miniatura">
+  </div>
+    </div>
+    <div class="menu-item">
+      <li> Desempenho escolar</li>
+      <span class="seta">▼</span>
+      </div>
+      <div class="conteudo">
+      
+      <li>Sou <strong>representante de turma</strong> desde a 9ªclasse-12ª classe. </li>
+      <li> Sou actualmente representante da <strong>12ª classe </strong>da escola onde frequento.  </li>
+      <li>Participei do<strong> parlamento infantil da cidade da Maxixe</strong> em 2017,onde fui eleita secretária do parlamento</li>
+      <li> Fiz parte do <strong>conselho escolar</strong> de 2017-2019 da Escola Básica de Nhambiho,onde frequentei desde a 2ª classe - 7ª classe.</li>
+      <li> Fiquei em <strong>1⁰ lugar </strong>nas olimpiadas de matematica na fase escolar e distrital 2024</li>
+    </div>
+    <div class="menu-item"><li>Code Like a Girl</li>
+      <span class="seta">▼</span>
+</div>
+<div class="conteudo">
+    <li>📚 Participei do programa <strong>Code Like a Girl</strong> da Vodacom (2023–2025), onde aprendi fundamentos de<strong> HTML, CSS e UX, </strong>fortalecendo minhas habilidades em desenvolvimento web e design digital.</li>
+    <div class="galeria">
+      <img src="./pri.jpg" alt="Foto " class="miniatura ">
+  <img src="./fm.jpg" alt="Foto 1" class="miniatura">
+  
+  <img src="./ce2025.jpg" alt="Foto 2" class="miniatura">
+  <img src="./ce2024.jpg" alt="Foto 2" class="miniatura">
+  <img src="./clg2024.jpg" alt="Foto 3" class="miniatura">
+  <img src="./ce2023.jpg" alt="Foto 4" class="miniatura">
+</div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span id="fechar">&times;</span>
+  <img class="lightbox-conteudo" id="imagemGrande">
+</div>
+<div class="menu-item"><li> Django Girl</li>
+  <span class="seta">▼</span>
+</div>
+<div class="conteudo">
+<li>Participei do<strong> Django Girls 2025</strong>, uma iniciativa global voltada para <strong>mulheres</strong> que desejam entrar no mundo da programação. Durante o programa, aprendi os conceitos básicos de <strong>Phyton</strong> e dei os primeiros passos no desenvolvimento web com Django. Essa experiência fortaleceu ainda mais meu interesse pela <strong>tecnologia e pela programação.</strong>
+</li>
+   
+      <div class="galeria">
+  <img src="dja.jpg" alt="Foto 1" class="miniatura">
+  <img src="n.jpg" alt="Foto 2" class="miniatura">
+  <img src="am.jpg" alt="Foto Destaque" class="miniatura destaque">
+</div>
+</div>
+<div class="menu-item">
+<li> workshop Zindi </li>
+  <span class="seta">▼</span>
+</div>
+<div class="conteudo">
+👩‍💻Participei do workshop  de <strong> introdução a ciência de dados e a  Zindi 2025. </strong> Onde adquiri conhecimentos sobre <strong> ciência de dados</strong> e a <strong>comunidade zindi</strong>,e como ajudar a minha comunidade através da <strong>tecnologia</strong>  </li>
+  
+      <div class="galeria">
+        <img src="./z.jpg" alt="Foto 7" class="miniatura">
+                <img src="./i.jpg" alt="Foto 8" class="miniatura">
+                </div>
+        </div>
+        <div class="menu-item">
+          <li> programa Geração Biz</li>
+  <span class="seta">▼</span>
+</div>
+<div class="conteudo">
+     Participei do curso de formação de activistas em <strong> Saúde Sexual </strong> e <strong>Reprodutiva</strong>,Prevenção de ITS's,HIV e SIDA,<strong>Violência Baseada no Género </strong>incluindo <strong>Álcool</strong> e<strong> Drogas</strong>  em Adolescentes e Jovens,no âmbito do programa <strong>Geração Biz 2023</strong>.</li>
+     
+    
+      
+      <div class="galeria">
+        <img src="./Bz.jpg" alt="Foto 7" class="miniatura">
+                <img src="./29.jpg" alt="Foto 8" class="miniatura">
+                </div>
+        </div>
+        <div class="menu-item">
+        <li><strong>Olimpíadas Bancárias – Millennium BIM (2024)</strong>
+        <span class="seta">▼</span>
+</span></div>
+<div class="conteudo">
+Participei das<strong> Olimpíadas Bancárias </strong>do Millennium BIM 2024, onde tive a oportunidade de aprender sobre temas importantes do setor financeiro, como <strong>empreendedorismo, prevenção ao branqueamento de capitais, conceitos de ativo e passivo,</strong> além de outros fundamentos relacionados ao funcionamento dos bancos.
+
+ </li>
+   
+      <div class="galeria">
+  <img src="m.jpg" alt="Foto 1" class="miniatura">
+  <img src="o.png" alt="Foto 2" class="miniatura">
+  <img src="l.jpg" alt="Foto Destaque" class="miniatura destaque">
+  </div>
+</div>
+  </ul>
+</section>
+    <section class="card" id="projetos">
+      <h2>Portifólio & Meus Projetos</h2>
+      <p>Confira alguns dos trabalhos que desenvolvi:</p>
+      <div class="menu-item">
+        <li>Website de vendas de equipamentos tecnológicos 2025</li>
+             <span class="seta">▼</span>
+</span>
+</div>
+<div class="conteudo">
+  <strong>CLAMERON TECH (Projeto em Grupo)</strong>
+<br><ul>
+  <li>
+  Desenvolvimento de um site de vendas de computadores, telefones e câmeras de segurança. O projeto foi criado em <strong>grupo</strong>, aplicando conhecimentos de <strong>HTML, CSS e JavaScript</strong>. O site ainda não foi lançado oficialmente, e foi criado durante o programa <strong> code like a girl</strong>
+  <br>
+
+<strong>Trabalho em equipe: </strong>Participei da organização das seções principais e da estrutura visual.
+<br>
+ <strong>Habilidades aplicadas:</strong> Estruturação de páginas web, design simples e navegação interativa.</li>
+     <div class="galeria">
+      <img src="./tech.jpg" alt="foto 0" class="miniatura">
+  <img src="./erom.jpg" alt="Foto 1" class="miniatura">
+    <img src="clam.jpg" alt="Foto Destaque" class="miniatura destaque">
+  </div>
+
+</div>
+<div class="menu-item"> Projecto estrelas do mar
+      <span class="seta">▼</span>
+</span>
+</div>
+<div class="conteudo">
+<li>Grupo de Dança: participei de ensaios e <strong>apresentações públicas</strong>, incluindo  apresentações nas telas da <strong>TVM</strong>. organizando eventos e arrecadando fundos para festas infantis no <strong>1 de Junho</strong>. O projecto tinha como objectivo além de fornecer momentos memoráveis as crianças,tirar as crianças do mundo das drogas,gravidez precoce ,estimulando o seu gosto pela dança. Fiz parte do projecto de 2016-2019.</li>
+     <div class="galeria">
+      
+  <img src="./1.jpg" alt="Foto" class="miniatura ">
+    <img src="./tvm.jpg" alt="Foto " class="miniatura ">
+    
+    </div>
+</div>
+<div class="menu-item"> Projecto de produçao de ovos escolar
+    <span class="seta">▼</span>
+</span>
+</div>
+<div class="conteudo">
+
+<li>Envolvi-me na gestão prática da produção, limpeza da capoeira, desenvolvimento de ideias e intercâmbio com outras escolas, aprimorando <strong>competências de organização e trabalho em equipe</strong>. O projecto foi implementado na escola secundária"1⁰ de Maio" de Chicuque, com  o objectivo de fornecer ovos para a comunidade escolar e em geral com um valor abaixo do mercado. Fiz parte do projecto de  2022-2023. e o projecto foi destaque em <strong>reportagem televisica</strong> (link disponivel <a href="https://www.facebook.com/miramartv.mz/videos/1144668516354705/?mibextid=rS40aB7S9Ucbxw6v==="target="_blank">Link para reportagem no facebook</a></li> </div>
+
+      </div>
+      <div class="menu-item"> Livro no Wattpad
+            <span class="seta">▼</span>
+</span>
+</div> <div class="conteudo">
+<li> 
+  <h2>📖 Meu Livro no Wattpad</h2>
+  <div class="livro-card">
+    <img src="f.jpg" class="f"alt="Capa do Livro">
+    <div class="livro-info">
+      <h3>Amor ao som da timbila</h3>
+      <br>
+      <p>Tenho um livro em andamento. Publicado na plataforma wattpad. 
+      <br>
+     <b><i><u>sinopse</u></i></b>
+      <br>
+        Um romance, que segue a vida de uma jovem moçambicana. Ele aborda assuntos como autodescoberta,amores ocultos e tudo com um toque tradicional moçambicano
+      </p>
+      <a href="https://www.wattpad.com/story/399048727?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=Merry_JCambula" target="_blank" class="btn-wattpad">Ler no Wattpad</a> </li>
+    </div>
+    </div>
+  </div>
+
+    </ul>
+    </section>
+    
+    <section class="card" id="contacto">
+  <h2>Contacto</h2>
+  <p>Entre em contacto comigo:</p>
+
+  <p>📧 Email: <a href="mailto:merrycambula630@gmail.com">merrycambula630@gmail.com </a></p>
+
+
+  <div class="redes">
+      <a href="https://www.instagram.com/merry_cambula?igsh=MWpwd2Z2eTVldm9zZA==" target="_blank">Instagram</a> <p>Instagram</p>
+    
+    <a href="https://www.facebook.com/merry.cambula"" target="_blank">facebook</a><p>facebook</p>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Criado por Merry José Cambula</p>
+  </footer>
+
+  <!-- JavaScript Externo -->
+  <script src="Js.js"></script>
+
+</body>
+</html>
